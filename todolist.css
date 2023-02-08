@@ -1,0 +1,101 @@
+/*GENERAL*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --grey-color: #D8D8D8;
+    --green-color: #40ad45ad;
+    --font-color: #333;
+    --transition: all 0.3s;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--grey-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-container {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+h1 {
+    color: var(--font-color);
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 3px solid var(--font-color);
+}
+
+input {
+    padding: 0.3rem;
+}
+
+button {
+    margin: 3px;
+    padding: 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--font-color);
+    color: var(--grey-color);
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--grey-color);
+    color: var(--font-color);
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-top: 0.3rem;
+    margin-right: 0.3rem;
+    width: 80%;
+}
+
+#todo-form {
+    padding: 1rem;
+}
+
+#todo-form p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.todo-item {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--font-color);
+    transition: var(--transition);
+}
+
+.todo-item h3 {
+    flex: 1;
+}
+
+.done {
+    background-color: var(--green-color);
+    color: #FFF;
+    font-style: italic;
+}
